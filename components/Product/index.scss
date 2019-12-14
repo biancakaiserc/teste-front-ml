@@ -1,0 +1,62 @@
+@import "../../assets/style/main";
+
+.products-list {
+    list-style: none;
+    padding: 0 16px;
+    margin: 0;
+}
+
+.product {
+    padding: 16px 0;
+    border-bottom: 1px solid $bg-primary;
+
+    &:last-of-type {
+        border: none;
+    }
+
+    &_image {
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+        margin-right: 16px;
+        vertical-align: middle;
+    }
+
+    &_info,
+    &_image,
+    &_location {
+        display: inline-block;
+    }
+
+    &_info {
+        color: $grayscale-60;
+        text-decoration: none;
+        vertical-align: top;
+        padding-top: 16px;
+
+        &:hover {
+            color: $secondary;
+        }
+
+        .info {
+
+            &_title {
+                font-size: 18px;
+                margin: 0;
+                max-width: 500px;
+            }
+        
+            &_price {
+                font-size: 24px;
+                font-weight: 600;
+                margin: 0 0 32px 0;
+            }
+        }
+    }    
+
+    &_location {
+        font-size: 12px;
+        float: right;
+        margin: 32px 50px 0 32px;
+    }
+}

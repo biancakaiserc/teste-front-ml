@@ -1,0 +1,30 @@
+@import "../../assets/style/main";
+
+header {
+    width: 100%;
+    background: $primary;
+    height: $headerHeight;
+}
+
+.header {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+
+    &,
+    &_logo,
+    &_logo_image {
+        height: 100%;
+    }
+
+    &_logo {
+        padding: 10px 0;
+        display: inline-block;
+        margin-right: 32px;
+    }
+
+    &_form {
+        width: 100%;
+        display: inline-block;
+    }
+}
